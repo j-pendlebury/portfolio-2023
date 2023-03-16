@@ -16,10 +16,14 @@ module.exports = {
     project: './tsconfig.json'
   },
   plugins: [
-    'react'
+    'react',
+    'react-refresh'
   ],
   rules: {
     semi: 'off',
-    '@typescript-eslint/semi': [2, 'always']
+    '@typescript-eslint/semi': [2, 'always'],
+    'react-refresh/only-export-components': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type']
   }
 };

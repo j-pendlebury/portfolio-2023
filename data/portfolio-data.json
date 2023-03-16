@@ -1,0 +1,56 @@
+{
+  "first_name": "Jamie",
+  "last_name": "Pendlebury",
+  "photo": "",
+  "work_history": [
+    {
+      "company": "BBC News",
+      "role": "Trainee Software Engineer",
+      "date_start": "2015-08-15",
+      "date_end": "2017-06-31"
+    },
+    {
+      "company": "BBC News",
+      "role": "Junior Software Engineer",
+      "date_start": "2017-07-15",
+      "date_end": "2018-07-31"
+    },
+    {
+      "company": "BBC News",
+      "role": "Software Engineer",
+      "date_start": "2018-07-31",
+      "date_end": "2021-06-30"
+    },
+    {
+      "company": "BuzzFeed News",
+      "role": "Software Engineer",
+      "date_start": "2021-06-21",
+      "date_end": "2022-12-31"
+    }
+  ],
+  "education": {
+    "name": "University of Greenwich",
+    "date_start": "2013",
+    "date_end": "2017",
+    "degree_name": "BSc Hons Web Technologies"
+  },
+  "projects": [
+    {
+      "company": "BuzzFeed News",
+      "project_url": "",
+      "description": "Lorem Ipsum"
+    }
+  ],
+  "useful_links": [
+    {
+      "type": "Github",
+      "url": "https://github.com/jblaut",
+      "icon": ""
+    },
+    {
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jamie-blaut-aba919146/",
+      "icon": ""
+    }
+  ]
+}
