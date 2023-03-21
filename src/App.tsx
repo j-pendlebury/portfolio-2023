@@ -5,13 +5,12 @@ import { mainFont, headingFont } from '../utils/fonts';
 
 const Background = styled.div`
   background: linear-gradient(42.36deg, #007C81 0.31%, #081955 62.55%);
-  padding:  60px 50rem 0;
-  flex-grow: 1;
+  padding:  60px 10rem;
   color: ${white};
   font-family: ${mainFont};
   display: flex;
   flex-direction: column;
-  width: 100%;
+  height: 100%;
 `;
 
 const StyledH1 = styled.h1`
@@ -138,14 +137,14 @@ const App = () => {
             <li>June 2021 - December 2022 :: Software Engineer</li>
           </StyledList>
         </WorkExperienceDetails>
-        <div>
+        <WorkExperienceDetails>
           BBC News
           <StyledList>
             <li>February 2020 - May 2021 :: Software Engineer</li>
             <li>July 2017 - December 2022 :: Junior Software Engineer</li>
             <li>August 2015 - June 2017 :: Trainee Software Engineer</li>
           </StyledList>
-        </div>
+        </WorkExperienceDetails>
       </WorkExperience>
     </Background>
   );

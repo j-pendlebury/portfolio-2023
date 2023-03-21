@@ -8,12 +8,10 @@ html {
 
 body {
   margin: 0;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
   display: flex;
 }
 
 #root {
   flex: 1;
-  display: flex;
 }
