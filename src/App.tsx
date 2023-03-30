@@ -4,13 +4,15 @@ import { white, magenta, coral } from '../utils/colours';
 import { mainFont, headingFont } from '../utils/fonts';
 
 const Background = styled.div`
-  background: linear-gradient(42.36deg, #007C81 0.31%, #081955 62.55%);
-  padding:  60px 15rem;
+  min-height: 100svh;
   color: ${white};
   font-family: ${mainFont};
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  grid-column: 2/3;
+  padding: 10px 5rem;
+
+  @media (max-width: 550px) {
+    padding: 20px;
+  }
 `;
 
 const StyledH1 = styled.h1`
@@ -63,6 +65,10 @@ const ImageContainer = styled.div`
   }
 
   translate: -15px 0;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Text = styled.div`
@@ -71,6 +77,7 @@ const Text = styled.div`
   justify-content: space-evenly;
   height: 100%;
   flex: 0 0 70%;
+  align-self: center;
 `;
 
 const Description = styled.div`
