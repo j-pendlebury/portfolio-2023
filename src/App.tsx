@@ -5,7 +5,7 @@ import { mainFont, headingFont } from '../utils/fonts';
 
 const Background = styled.div`
   background: linear-gradient(42.36deg, #007C81 0.31%, #081955 62.55%);
-  padding:  60px 10rem;
+  padding:  60px 15rem;
   color: ${white};
   font-family: ${mainFont};
   display: flex;
@@ -20,7 +20,7 @@ const StyledH1 = styled.h1`
   margin: 0;
   color: ${coral};
   text-shadow: 0px 4px 4px ${magenta};
-  font-size: 5rem;
+  font-size: 3rem;
 `;
 
 const StyledNameSpan = styled.span`
@@ -75,7 +75,7 @@ const Text = styled.div`
 
 const Description = styled.div`
   line-height: 22px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 
 const WorkExperience = styled.div`
@@ -92,12 +92,12 @@ const WorkExperienceHeader = styled.span`
   border-bottom: 5px solid ${magenta};
   display: inline-block;
   margin-bottom: 20px;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: ${coral};
 `;
 
 const WorkExperienceDetails = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 `;
 
 const StyledList = styled.ul`
@@ -105,6 +105,16 @@ const StyledList = styled.ul`
 
   & li {
     padding-left: 10px;
+  }
+`;
+
+const Links = styled.a`
+  color: ${white};
+  transition: 0.5s ease-in-out; 
+
+  &:hover {
+    text-decoration: none;
+    text-shadow: 3px 3px 4px ${coral}
   }
 `;
 
@@ -119,7 +129,9 @@ const App = () => {
             <StyledNameSpan>Pendlebury</StyledNameSpan>
           </StyledH1>
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            <p>{"Hello, I'm Jamie. I'm a Frontend Software Engineer."}</p>
+            <p>For more information please contact me here:</p>
+            <p> - e-mail: <Links href="mailto:j_pendlebury94@hotmail.com">j_pendlebury94@hotmail.com</Links></p>
           </Description>
         </Text>
         <ImageContainer>
