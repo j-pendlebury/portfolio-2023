@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import Header from './components/Minimalist/Header';
 import { white, magenta, coral } from '../utils/colours';
 import { mainFont, headingFont } from '../utils/fonts';
+import data from '../data/portfolio-data.json';
+import { format } from 'date-fns';
+import profilePicture from '../img/profile-picture.png';
 
 const Background = styled.div`
   min-height: 100svh;
@@ -126,44 +129,41 @@ const Links = styled.a`
 `;
 
 const App = () => {
+  const { firstName, lastName, usefulLinks, workHistory } = data;
+
   return (
     <Background className="App">
       <Header title="portfolio" year={2023} />
       <Content>
         <Text>
           <StyledH1>
-            <StyledNameSpan>Jamie</StyledNameSpan>
-            <StyledNameSpan>Pendlebury</StyledNameSpan>
+            <StyledNameSpan>{firstName}</StyledNameSpan>
+            <StyledNameSpan>{lastName}</StyledNameSpan>
           </StyledH1>
           <Description>
             <p>{"Hello, I'm Jamie. I'm a Frontend Software Engineer."}</p>
             <p>For more information please contact me here:</p>
-            <p> - e-mail: <Links href="mailto:j_pendlebury94@hotmail.com">j_pendlebury94@hotmail.com</Links></p>
+            {usefulLinks.map((link, key) => {
+              return <p key={key}>{link.type}: <Links href={link.type === 'E-Mail' ? `mailto:${String(link.url)}` : link.url}>{link.url}</Links></p>;
+            })}
           </Description>
         </Text>
         <ImageContainer>
-          <Image src="../img/profile-picture.png" />
+          <Image src={profilePicture} />
         </ImageContainer>
       </Content>
-
       <WorkExperience>
         <WorkExperienceHeader>
           Work Experience
         </WorkExperienceHeader>
-        <WorkExperienceDetails>
-          Buzzfeed News
-          <StyledList>
-            <li>June 2021 - December 2022 :: Software Engineer</li>
-          </StyledList>
-        </WorkExperienceDetails>
-        <WorkExperienceDetails>
-          BBC News
-          <StyledList>
-            <li>February 2020 - May 2021 :: Software Engineer</li>
-            <li>July 2017 - December 2022 :: Junior Software Engineer</li>
-            <li>August 2015 - June 2017 :: Trainee Software Engineer</li>
-          </StyledList>
-        </WorkExperienceDetails>
+        {workHistory.map((job, key) => {
+          return <WorkExperienceDetails key={key}>
+            <strong>{job.company}</strong>
+            <StyledList>
+              <li>{format(new Date(job.dateStart), 'dd/MM/yyyy')} - {job.dateEnd} :: {job.role}</li>
+            </StyledList>
+          </WorkExperienceDetails>;
+        })}
       </WorkExperience>
     </Background>
   );

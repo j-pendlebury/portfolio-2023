@@ -1,47 +1,47 @@
 {
-  "first_name": "Jamie",
-  "last_name": "Pendlebury",
+  "firstName": "Jamie",
+  "lastName": "Pendlebury",
   "photo": "",
-  "work_history": [
+  "workHistory": [
+    {
+      "company": "BuzzFeed News",
+      "role": "Software Engineer",
+      "dateStart": "2021-06-21",
+      "dateEnd": "2022-12-31"
+    },
     {
       "company": "BBC News",
-      "role": "Trainee Software Engineer",
-      "date_start": "2015-08-15",
-      "date_end": "2017-06-31"
+      "role": "Software Engineer",
+      "dateStart": "2018-07-31",
+      "dateEnd": "2021-06-30"
     },
     {
       "company": "BBC News",
       "role": "Junior Software Engineer",
-      "date_start": "2017-07-15",
-      "date_end": "2018-07-31"
+      "dateStart": "2017-07-15",
+      "dateEnd": "2018-07-31"
     },
     {
       "company": "BBC News",
-      "role": "Software Engineer",
-      "date_start": "2018-07-31",
-      "date_end": "2021-06-30"
-    },
-    {
-      "company": "BuzzFeed News",
-      "role": "Software Engineer",
-      "date_start": "2021-06-21",
-      "date_end": "2022-12-31"
+      "role": "Trainee Software Engineer",
+      "dateStart": "2015-08-15",
+      "dateEnd": "2017-06-31"
     }
   ],
   "education": {
     "name": "University of Greenwich",
-    "date_start": "2013",
-    "date_end": "2017",
-    "degree_name": "BSc Hons Web Technologies"
+    "dateStart": "2013",
+    "dateEnd": "2017",
+    "degreeName": "BSc Hons Web Technologies"
   },
   "projects": [
     {
       "company": "BuzzFeed News",
-      "project_url": "",
+      "projectUrl": "",
       "description": "Lorem Ipsum"
     }
   ],
-  "useful_links": [
+  "usefulLinks": [
     {
       "type": "Github",
       "url": "https://github.com/jblaut",
